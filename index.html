@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Taniti - Tropical Paradise Awaits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>Welcome to Taniti</h1>
+            <p>Your gateway to adventure and relaxation in the Pacific</p>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><img src="icons/home.png" alt=""> Home</a></li>
+                    <li><a href="attractions.html"><img src="icons/attractions.png" alt=""> Attractions</a></li>
+                    <li><a href="lodging.html"><img src="icons/lodging.png" alt=""> Lodging</a></li>
+                    <li><a href="dining.html"><img src="icons/dining.png" alt=""> Dining</a></li>
+                    <li><a href="transportation.html"><img src="icons/transportation.png" alt=""> Transportation</a>
+                    </li>
+                    <li><a href="contact.html"><img src="icons/contact.png" alt=""> Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Image Section -->
+    <section class="hero">
+        <img src="images/tropical-beach.jpg" alt="Tropical Beach in Taniti">
+        <div class="hero-text">
+            <h2>Discover the Beauty of Taniti</h2>
+            <p>Explore our pristine beaches, lush rainforests, and rich culture.</p>
+            <a href="attractions.html" class="btn">Explore Attractions</a>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="section">
+        <div class="container">
+            <h2>Explore Taniti’s Attractions</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/beaches.jpg" alt="Beaches">
+                    <h3>Beaches</h3>
+                    <p>Enjoy miles of sandy and rocky shores along Yellow Leaf Bay.</p>
+                </div>
+                <div class="card">
+                    <img src="images/rainforest.jpg" alt="Rainforest">
+                    <h3>Rainforest</h3>
+                    <p>Immerse yourself in the lush beauty of our tropical rainforest.</p>
+                </div>
+                <div class="card">
+                    <img src="images/volcano.jpg" alt="Volcano">
+                    <h3>Active Volcano</h3>
+                    <p>Visit our small, active volcano for a thrilling adventure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Information Section -->
+    <section id="culture" class="section">
+        <div class="container">
+            <h2>Experience Taniti's Culture</h2>
+            <p>Discover local festivals, art, and traditions that make Taniti unique. Visit during one of our vibrant
+                festivals for an unforgettable cultural experience.</p>
+        </div>
+    </section>
+
+    <!-- Lodging Section -->
+    <section id="lodging" class="section">
+        <div class="container">
+            <h2>Stay in Comfort</h2>
+            <p>From cozy family-owned hotels to luxurious resorts, Taniti offers accommodations for every traveler.</p>
+            <br></br>
+            <a href="lodging.html" class="btn">View Lodging Options</a>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="section">
+        <div class="container">
+            <h2>Discover Local Flavors</h2>
+            <p>Sample Taniti’s delicious local cuisine and enjoy a variety of dining options.</p>
+            <br></br>
+            <a href="dining.html" class="btn">Explore Dining</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For inquiries and assistance, reach out to our tourism board.</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <p>Follow us on social media for the latest updates.</p>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! A representative will reach out to you soon.');
+
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>
